@@ -1,14 +1,29 @@
 .container__small-card {
+  background-color: transparent;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  display: flex;
   width: 700px;
   margin-bottom: 0.9rem;
 }
+
 
 .container__small-card-content {
   display: flex;
   flex-direction: row;
 }
 
-.small-card__photo > img {
+.small-card__photo{
+  background-color: transparent;
+}
+
+.small-card__photo:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.small-card__photo > a > img {
+  border-radius: 5px;
   width: 200px;
   min-width: 200px;
   margin-right: 1rem;
@@ -20,6 +35,12 @@
   align-items: center;
 }
 
-.container__small-card__separator {
-  margin-top: .5rem;
+.small-card__title > h1 {
+  font-size: 1rem;
+}
+
+.container__small-card__separator{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
 }
